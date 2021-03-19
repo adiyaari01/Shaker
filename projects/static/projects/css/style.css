@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, article,main,footer,section,nav,ul,div,a,li {
+    display: block;
+}
+
+/************HEADER***********/
+header{
+    height: 150px;
+    width: 100%;
+}
+
+/************Login/Register************/
+.container{
+    position: relative;
+    font-size: 50px;
+    font-family: Carter One;
+    font-style: normal;
+    font-weight: normal;
+    display: flex; 
+    margin: 0 auto; 
+    margin-top: 5%;
+    width: 800px;
+    height: 800px;
+    background: url(../media/images/Shaker_logo.png) no-repeat left; 
+}  
+
+.loginButton{
+    position: absolute;
+    margin-right: 50%;
+}
+
+.registerButton{
+    position: absolute;
+    margin-left: 70%;
+}
+
+.container a{
+    color: firebrick;   
+}
+
+.container a:hover{
+    color: black;
+    text-decoration: none;
+
+}
+
+/***********Registration Form***********/
+
+.registerWrapper{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.registerWrapper h1{
+    position: relative;
+    font-family: Carter One;
+    color: firebrick;
+    font-size: 70px;
+}
+
+.registerWrapper form{
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    text-align: left;
+}
+
+.registerWrapper button{
+    position: relative;
+    left: 40%;
+}
+
+/********Login Form**********/
+.containerLogin{
+    position: relative;
+    top: 25px;
+    font-family: Carter One;
+    text-align: center;
+}  
+
+.containerLogin h1{
+    color: firebrick;
+    font-size: 90px;   
+}
+
+.loginForm{
+    padding-top:25px;
+   display: inline-block;
+   text-align: left;
+}
+
+.containerLogin button{
+    position: relative;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+/***************header**************/
+.headerIcons a{
+    position: relative;
+    float: left;
+    margin-top: 2px;
+    font-size: 35px; 
+    color: firebrick;
+    letter-spacing: 50px;
+}
+.headerIcons{
+    margin-left: 15px;
+}
+.greeting{
+    position: relative;
+    float: right;
+    font-size: 35px; 
+    color: firebrick;
+    display: flex;
+    margin-right: 15px;
+}
+
+#logo {
+    position: absolute;
+    width: 15%;
+    height: 140px;
+    background-image: url(../media/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 45%;
+}
+#logo:hover{
+    -webkit-animation-name:              shake;    
+    -webkit-animation-duration:          0.8s;
+    -webkit-animation-iteration-count:   infinite;
+    -webkit-animation-timing-function:   linear;
+    -webkit-transform-origin:            50% 100%;
+}
+
+@keyframes shake {
+    0%  { -webkit-transform:     translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform:     translate(-1px, -2px) rotate(-2deg); }
+    20% { -webkit-transform:     translate(-3px, 0px) rotate(3deg); }
+    30% { -webkit-transform:     translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform:     translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform:     translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform:     translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform:     translate(2px, 1px) rotate(-2deg); }
+    80% { -webkit-transform:     translate(-1px, -1px) rotate(4deg); }
+    90% { -webkit-transform:     translate(2px, 2px) rotate(0deg); }
+    100%{ -webkit-transform:     translate(1px, -2px) rotate(-1deg); }
+   }
+
+
+.headerIcons a:hover{
+    text-decoration: none;
+    color: rgb(151, 5, 5);
+}
+
+/************NAVBAR***********/
+
+nav a:hover {
+    border-style: solid;
+    border-width: 0px 0px 2.5px 0px;
+    border-color: rgb(161, 44, 15);
+}
+
+.nav-link {
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 100px;
+}
+
+.navbar{
+    position: relative;
+}
+
+nav button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+/****************BREADCRUMBS*************/
+
+.breadcrumb {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50px;
+    width: 100%;
+}
+/****************CREATE NEW PROJECT********************/
+
+.createnewproject-wrapper{
+    position: relative;
+    margin-left: 40%;
+    font-family: Carter One;
+    font-size: 20px;
+    justify-content: space-evenly;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.createnewproject-wrapper input[type="text"], .createnewproject-wrapper input[type="email"], .createnewproject-wrapper input[type="tel"], .createnewproject-wrapper textarea{
+    width:100%;
+    height: 40px;
+}
+
+input:invalid {
+    border: firebrick solid 1px;
+}
+
+textarea:invalid {
+    border: firebrick solid 1px;
+}
+
+/**************HOME PAGE***************/
+
+.main-wrapper{
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: space-evenly;
+    
+}
+
+.main-wrapper a, .project-container a{
+    color:black;
+}
+
+.main-wrapper a:hover, .project-container a:hover{
+    color: firebrick;
+    text-decoration: none;
+}
+
+/**************projec page**************/
+.project-container{
+    position: relative;
+    flex-wrap: wrap;
+    top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+    
+.project-container h1, .createnewproject-wrapper h1{
+    position: relative;
+    font-family: Carter One;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+img{
+    position: relative;
+    max-width:100%;
+    height:auto;
+}
+
+.facultyIcon{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.contact{
+    margin-top: 30px;
+}
+/**************heart change color - JS**************/
+
+.color {
+    color: firebrick;
+}
+
+.heart {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    top: -70px;
+    font-size: 50px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/****************Faculties************/
+
+
+#faculties-list{
+    position: relative;
+    font-family: Carter One;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#faculties-list li{
+position: relative;
+font-size: 20px;
+padding: 30px;
+margin: 0 auto;
+display: inline-block;
+}
+
+#faculties-list button{
+    position: relative;
+    float: right;
+}
+/*mobile*/
+@media (max-width: 680px) {
+    .breadcrumb {
+        visibility: hidden;
+    }
+    header{
+        background-color: white;
+        height: 80px;
+    }
+
+    .headerIcons a{
+        margin: 2%;
+        font-size: 17px; 
+        letter-spacing: 12px;
+    }
+    .greeting{
+        font-size: 17px; 
+    }
+
+    #logo{
+        background-image: url(../media/images/logoPhone.png);
+    height: 70px;
+    }
+
+}
+
+
+@media only screen and (min-width:300px) and (max-width:770px){
+    /************Login/Register************/
+    .container{
+        font-size:70px;
+        margin-top: 20%;
+        width: 80%;
+        height: 80%;
+    } 
+    .loginButton{
+        margin-left: 30%;
+        margin-top: 20%;
+    }
+    .registerButton{
+        margin-top: 60%;
+        margin-left: 20%;
+    }
+    .container a{
+        color: white;
+    }
+    .loginRegisterBody{
+        background-color: firebrick;   
+    }
+
+}
