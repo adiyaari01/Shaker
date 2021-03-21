@@ -96,20 +96,6 @@
                       <button type='submit' class="far fa-trash-alt btn btn-light">&nbsp;&nbsp;<b>Delete project</b></button>
                     </form>
                   {% endif %}
-<!--
-
-                {% if project.user_id_id == user.id or user.is_superuser %}
-                  <a href="/project/{{ project.id }}" class="fas fa-pencil-alt">&nbsp;&nbsp;Edit</a> 
-                {% endif %}
-                {% if user.is_superuser %}
-                <form action="{% url 'deleteproject' project.id %}" method="POST">
-                {% csrf_token %}
-                  <button type='submit' class="far fa-trash-alt btn btn-light">&nbsp;&nbsp;<b>Delete project</b></button>
-                </form>
-                {%endif %}
--->
-
-
                 <br><br>
                 {% if project.fasion %}
                     <img class="facultyIcon" src="{% static 'projects/media/images/departmentsIcons/fashion.png' %}" class="Fasion" alt="Fasion" title="Fasion">&nbsp;
